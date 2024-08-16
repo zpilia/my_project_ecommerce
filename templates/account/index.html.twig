@@ -3,11 +3,10 @@
 {% block body %}
     <div class="container my-5">
         <h1>Mon compte</h1>
-
-        <p>Bienvenue sur votre compte !</p>
+        <h3>Bienvenue sur votre compte !</h3>
 
         <div class="my-4">
-            <a href="" class="btn btn-primary">Modifier mon mot de passe</a>
+            <a href="{{ path('app_account_modify_password') }}" class="btn btn-primary">Modifier mon mot de passe</a>
             <a href="{{ path('app_logout') }}" class="btn btn-danger">Déconnexion</a>
         </div>
     </div>
